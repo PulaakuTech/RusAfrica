@@ -1,424 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RusAfrica Educational Agency</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Marquee Section */
-        .marquee {
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            font-size: 18px;
-        }
-
-        .marquee p {
-            margin: 0;
-            animation: marquee-animation 10s linear infinite;
-        }
-
-        .marquee a.apply-link {
-            color: #e74c3c;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .marquee a.apply-link:hover {
-            text-decoration: underline;
-        }
-
-        @keyframes marquee-animation {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /* Header Section */
-        header {
-            background-color: #2980b9;
-            color: white;
-            padding: 10px 0;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        header nav ul li {
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Home Section */
-        .hero {
-            background-color: #ecf0f1;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .cta {
-            display: inline-block;
-            background-color: #2980b9;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        /* About Section */
-        #about {
-            padding: 50px;
-            text-align: center;
-        }
-
-        /* Counter Section */
-        .counter-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .counter-box {
-            background-color: #f1f1f1;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .counter {
-            font-size: 40px;
-            font-weight: bold;
-            color: #2980b9;
-        }
-
-        /* Services Section */
-        #services {
-            background-color: #ecf0f1;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .service-list {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .service {
-            width: 30%;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Testimony Section */
-        #testimony {
-            background-color: #f1f1f1;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .testimony-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .testimony {
-            display: flex;
-            align-items: center;
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 60%;
-            text-align: left;
-        }
-
-        .testimony-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 15px;
-            border: 2px solid #2980b9;
-        }
-
-        .testimony p {
-            font-size: 16px;
-            color: #333;
-        }
-
-        .testimony strong {
-            display: block;
-            margin-top: 5px;
-            color: #2980b9;
-        }
-
-        /* Contact Section */
-        #contact {
-            padding: 50px;
-            text-align: center;
-        }
-
-        form {
-            width: 60%;
-            margin: 0 auto;
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-size: 16px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        button {
-            background-color: #2980b9;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #2980b9;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Russia-Africa Education Consultation Agency</title>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      position: relative;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 15px;
+    }
+    nav ul li a:hover {
+      background: #007acc;
+      color: #fff;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .hero {
+      background: #4caf50;
+      color: #fff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .counter {
+      background: #007acc;
+      color: #fff;
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .counter h3 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #007acc;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .cta-button:hover {
+      background: #005f99;
+    }
+    .marquee {
+      background: #fff;
+      color: #007acc;
+      padding: 0.5rem 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .services {
+      text-align: center; /* Center the heading */
+    }
+    .service-item {
+      background: #007acc;
+      color: #fff;
+      padding: 1rem;
+      margin: 1rem auto;
+      border-radius: 5px;
+      text-align: center;
+      max-width: 300px;
+    }
+    .partner-universities {
+      position: relative;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .university-item {
+      display: none;
+      text-align: center;
+      background: #fff;
+      color: #333;
+      border: 1px solid #007acc;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 80%;
+      border-radius: 5px;
+    }
+    .university-item img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .university-item.active {
+      display: block;
+    }
+    .university-controls {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    .university-controls button {
+      background: #007acc;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .university-controls button:hover {
+      background: #005f99;
+    }
+    .indicators {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+    .indicators span {
+      height: 10px;
+      width: 10px;
+      margin: 0 5px;
+      background: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .indicators span.active {
+      background: #007acc;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      color: #007acc;
+    }
+    .testimonials {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+  .testimonials h2 {
+    color: #007acc;
+    margin-bottom: 1.5rem;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .testimonial {
+    max-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .testimonial p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  .testimonial h4 {
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  .testimonial .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .contact {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+  .contact h2 {
+    color: #007acc;
+    margin-bottom: 1.5rem;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    background: #007acc;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #005f99;
+  }
+   .footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      position: relative;
+    }
+    .footer p {
+      margin: 0;
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      color: #fff; /* Set icon color */
+    }
+    .social-icons a:hover {
+      color: #007acc; /* Set hover color */
+    }
+    .social-icons i {
+      font-size: 30px; /* Set icon size */
+    }
+  </style>
 </head>
 <body>
-
-    <!-- Marquee Section -->
+  <header>
+    <h1>Russia-Africa Education Consultation Agency</h1>
+    <p>Connecting African Students with High-Ranking Russian Universities</p>
     <div class="marquee">
-        <p>🎓 Admissions are OPEN for the 2025 academic year! <a href="#contact" class="apply-link">Click here to apply now!</a></p>
+      Admissions are open for the 2025 academic year! <a href="#contact">Click here</a>
     </div>
-
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>RusAfrica Educational Consultancy Agency</h1>
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#universities">Universities</a></li>
-                <li><a href="#testimony">Testimony</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero">
-            <h2>Your Path to a Russian Education Starts Here</h2>
-            <p>Helping African students gain admission to top Russian universities. With strong partnership with top institutions, we guide students through every step of the process, from application to visa processing</p>
-            <a href="#contact" class="cta">Get Started</a>
-        </div>
+    <nav>
+      <ul>
+	  <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#partners">Partner Universities</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <section id="home" class="hero">
+      <div class="counter">
+        <h3 id="admitted-count">0</h3>
+        <p>Students Admitted</p>
+      </div>
+      <h2>Welcome to Russia-Africa Education</h2>
+      <p>Your gateway to top Russian universities. Providing support and guidance to African students and their parents.</p>
+      <a href="#services" class="cta-button">Get Started</a>
     </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About RusAfrica Educational Agency</h2>
-        <p>We specialize in helping African students gain admission to Russian universities. With strong partnerships with top institutions, we guide students through every step of the process, from application to visa processing.</p>
-
-        <!-- Counter Section -->
-        <div class="counter-container">
-            <div class="counter-box">
-                <h2 class="counter" data-target="1000">0</h2>
-                <p>Students Admitted</p>
-            </div>
-        </div>
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Russia-Africa Education is dedicated to helping African students gain admission to high-ranking Russian universities. With our strong partnerships and personalized guidance, we guide students through every step of the process, from application to visa processing.</p>
     </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service">
-                <h3>Admission Assistance</h3>
-                <p>We help you navigate the application process for Russian universities.</p>
-            </div>
-            <div class="service">
-                <h3>Visa Guidance</h3>
-                <p>We provide step-by-step support for your student visa application.</p>
-            </div>
-            <div class="service">
-                <h3>Scholarship Opportunities</h3>
-                <p>Access various scholarships and financial aid options for studying in Russia.</p>
-            </div>
-        </div>
+    <section id="services" class="section services">
+      <h2>Our Services</h2>
+      <div class="service-item">
+        <h3>Admission Assistance</h3>
+        <p>We help you navigate the application process for Russian Universities.</p>
+      </div>
+      <div class="service-item">
+        <h3>Visa Guidance</h3>
+        <p>We provide step-by-step support for your student visa application.</p>
+      </div>
+      <div class="service-item">
+        <h3>Scholarship Opportunities</h3>
+        <p>We offer information on how to access scholarships and financial aid to help students fund their education.</p>
+      </div>
     </section>
-	<!-- Partner Universities Section -->
-<section id="universities">
-    <h2>Partner Universities</h2>
-    <p>We have established strong partnerships with top Russian universities to provide you with the best educational opportunities.</p>
-
-    <div class="university-logos">
-        <div class="university-logo">
-            <img src="rostov.png" alt="University 1">
-        </div>
-        <div class="university-logo">
-            <img src="" alt="University 2">
-        </div>
-        <div class="university-logo">
-            <img src="ufu.png" alt="University 3">
-        </div>
-        <div class="university-logo">
-            <img src="university4-logo.png" alt="University 4">
-        </div>
-        <div class="university-logo">
-            <img src="university5-logo.png" alt="University 5">
-        </div>
-        <div class="university-logo">
-            <img src="university6-logo.png" alt="University 6">
-        </div>
+    <section id="partners" class="section partner-universities">
+      <h2>Partner Universities</h2>
+      <div class="university-item active">
+        <img src="rostov.jpg" alt="Rostov State Medical University">
+        <h3>Rostov State Medical University</h3>
+        <p>Rostov State Medical University, founded in 1930 on the basis of the medical faculty of the Warsaw Russian University, is located in the picturesque center of the city. Its campus includes academic departments, clinics, a sports complex, student dormitories, a canteen and a student polyclinic.</p>
+      </div>
+      <div class="university-item">
+        <img src="dgstu.jpg" alt="University 2">
+        <h3>Don State Technical University</h3>
+        <p>Don State Technical University was established on May 20, 1930. Aleading russian university in the field of engineering </p>
+      </div>
+      <div class="university-item">
+        <img src="youfu.jpg" alt="University 3">
+        <h3>Southern Federal University</h3>
+        <p>A leading russian university estblished in 1915.  A leading position in the area of innovations and research; integration of research into education; a winning combination of fundamental and applied research; highly reputed schools of thought; open-minded and creative teaching staff; up-to-date research facilities and appliances; collaboration with the Russian Academy of Sciences and international research facilities</p>
+      </div>
+      <div class="university-item">
+        <img src="kazan.jpg" alt="University 4">
+        <h3>Kazan Federal University</h3>
+        <p>Located in the city of Kazan. KFU has About 11,500 international students from 101 countries</p>
+      </div>
+      <div class="university-item">
+        <img src="kuban.jpg" alt="University 5">
+        <h3>Kuban State Technical University</h3>
+        <p>Kuban State Technological University is the oldest higher educational institution in Krasnodar region, was established on June 16th, 1918. More than 600 foreign students study at University.
+</p>
+      </div>
+      <div class="university-controls">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+      </div>
+      <div class="indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+	<section id="testimonials" class="section testimonials">
+  <h2>What Our Students and Parents Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <img src="avatar.png" alt="Student 1" class="avatar">
+      <p>"Russia-Africa Educational Agency made my dream of studying in Russia a reality!. They guided me through the entire admission process and made everything so easy."</p>
+      <h4>Amina</h4>
+      <p>Nigeria</p>
     </div>
+    <div class="testimonial">
+      <img src="avatar.png" alt="Parent 1" class="avatar">
+      <p>"As a parent, I was concerned about my child studying abroad. The agency supported us every step of the way."</p>
+      <h4>John</h4>
+      <p>Ghana</p>
+    </div>
+    <div class="testimonial">
+      <img src="avatar.png" alt="Student 2" class="avatar">
+      <p>"Thanks to their guidance, I received a scholarship and am pursuing my dream career in medicine."</p>
+      <h4>Adam</h4>
+      <p>Somalia</p>
+    </div>
+  </div>
 </section>
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="designation">Designation</label>
+      <select id="designation" name="designation" required>
+        <option value="student">Student</option>
+        <option value="parent">Parent/Guardian</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2025 Russia-Africa Education. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/russiaafricaeducation" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="https://www.twitter.com/russiaafricaeducation" target="_blank">
+        <i class="fab fa-twitter-square"></i>
+      </a>
+      <a href="https://www.instagram.com/russianeducation" target="_blank">
+        <i class="fab fa-instagram-square"></i>
+      </a>
+      <a href="https://www.linkedin.com/russianeducation" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+    // Counter Functionality
+    let count = 0;
+    const counterElement = document.getElementById('admitted-count');
+    const target = 1000;
+    const increment = 1;
 
-    <!-- Testimony Section -->
-    <section id="testimony">
-        <h2>What Our Students Say</h2>
-        <div class="testimony-list">
-            <div class="testimony">
-                <img src="amina.jpg" alt="Amina" class="testimony-img">
-                <p>"RusAfrica Educational Agency made my dream of studying in Russia a reality! They guided me through the entire admission process and made everything so easy." <br> <strong>- Amina, Nigeria</strong></p>
-            </div>
-            <div class="testimony">
-                <img src="john.jpg" alt="John" class="testimony-img">
-                <p>"The team at RusAfrica was very supportive and helped me find the right university in Russia. They were with me every step of the way!" <br> <strong>- John, Ghana</strong></p>
-            </div>
-            <div class="testimony">
-                <img src="michael.jpg" alt="Michael" class="testimony-img">
-                <p>"I am so grateful for their assistance with my visa and admission. I am now studying at Moscow State University, thanks to them!" <br> <strong>- Michael, Kenya</strong></p>
-            </div>
-        </div>
-    </section>
+    const updateCounter = () => {
+      if (count < target) {
+        count += increment;
+        counterElement.textContent = count + '+';
+        setTimeout(updateCounter, 20); // Adjust speed of counting
+      }
+    };
 
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you're ready to start your journey or have any questions, reach out to us!</p>
-        <form id="whatsappForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send via WhatsApp</button>
-        </form>
-    </section>
+    updateCounter();
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 RusAfrica Educational Agency. All Rights Reserved.</p>
-    </footer>
+    // Partner Universities Carousel Functionality
+    const universities = document.querySelectorAll('.university-item');
+    const indicators = document.querySelectorAll('.indicators span');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    let currentUniversity = 0;
 
-    <!-- JavaScript to Animate Counter -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const counters = document.querySelectorAll('.counter');
-            const speed = 100; // Adjust speed of counting
+    const updateUniversities = () => {
+      universities.forEach((university, index) => {
+        university.classList.toggle('active', index === currentUniversity);
+        indicators[index].classList.toggle('active', index === currentUniversity);
+      });
+    };
 
-            const animateCounter = (counter) => {
-                const target = +counter.getAttribute('data-target');
-                const updateCount = () => {
-                    const count = +counter.innerText;
-                    const increment = target / speed;
+    const showNextUniversity = () => {
+      currentUniversity = (currentUniversity + 1) % universities.length;
+      updateUniversities();
+    };
 
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCount, 20);
-                    } else {
-                        counter.innerText = target + "+"; // Ensure it shows 1000+
-                    }
-                };
-                updateCount();
-            };
+    const showPrevUniversity = () => {
+      currentUniversity = (currentUniversity - 1 + universities.length) % universities.length;
+      updateUniversities();
+    };
 
-            // Use IntersectionObserver to start counting when visible
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounter(entry.target);
-                        observer.unobserve(entry.target); // Stop observing once counted
-                    }
-                });
-            }, { threshold: 0.5 });
+    // Event Listeners for Buttons
+    nextBtn.addEventListener('click', showNextUniversity);
+    prevBtn.addEventListener('click', showPrevUniversity);
 
-            counters.forEach(counter => {
-                observer.observe(counter);
-            });
-        });
-    </script>
+    // Auto-rotate Universities
+    setInterval(showNextUniversity, 5000); // Automatically switch every 5 seconds
+  </script>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('full-name').value;
+    const email = document.getElementById('email').value;
+    const designation = document.getElementById('designation').value;
+    const message = document.getElementById('message').value;
 
-    <!-- JavaScript to Send Form Data to WhatsApp -->
-    <script>
-        document.getElementById("whatsappForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
+    const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ADesignation: ${designation}%0AMessage: ${message}`;
+    const whatsappURL = `https://api.whatsapp.com/send?phone=+79614025388&text=${whatsappMessage}`;
 
-            // Replace with your WhatsApp number (without + or spaces)
-            const phoneNumber = "79614025388"; 
-
-            // Get form values
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            // Format WhatsApp message
-            const whatsappMessage = `Hello, my name is ${name}.\n\nEmail: ${email}\n\nMessage: ${message}`;
-
-            // Encode message for URL
-            const encodedMessage = encodeURIComponent(whatsappMessage);
-
-            // Redirect to WhatsApp chat
-            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
-        });
-    </script>
-</body>
-</html>
+    window.open(whatsappURL, '_blank');
+  });
+</script>
